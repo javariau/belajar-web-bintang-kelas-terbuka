@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding:0 ;
+            background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+        }
+        header{
+            margin: 0;
+            padding: ;
+            background-color: rgba(35, 49, 71, 0.6);
+            border-radius: 12px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li{
+            display: flex;
+            justify-content:space-between ;
+        }
+        h1{
+            padding: 32%;
+            margin-left: 0%;
+            padding-bottom: 0px;
+            color:rgb(255, 255, 255);
+        }
+        .card{
+             position: relative;
+      width: 500px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5); /* Fallback jika gambar error */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .card img{
+        width: 100px;
+      object-fit: cover;
+      height: 100px;
+      display: block;
+      filter: brightness(0.5);
+        }
+        .card .text{
+    position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      width: 80%;
+        }.card h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+        p{
+            padding: 0%;
+            margin:12px;
+            position:left;
+            color:aliceblue;
+        }
+        img{
+            padding: 0px;
+            margin: 50px;
+            width: 100%;
+        }
+        header img{
+            margin: 0px;
+            padding: 0px;
+            width: 10%;
+        }
+    </style>
 </head>
 <body>
     <header>
     <nav class="logo">
-        <img src="" alt="logo">
+        <img src="compacin.png" alt="logo" height="" width="">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">profil</a></li>
@@ -16,7 +96,17 @@
         </ul>
     </nav>
     </header>
+    <div class="card">
+
+    <div style="position: relative; height: 10px;"> <!--nah kita bikin tulllisan ini nanti nimpa gambarnya inikan gambarnya yang nimpa tulisannya-->
+    <img src="it.png" alt="gambar">
+    </div>
+
+    <div style="position: absolute; top: 50px; left: 50px; color: white; z-index: 2;">
     <h1>skill saya</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam nihil error hic reprehenderit! Suscipit laudantium rerum numquam, facilis ipsum harum sit aperiam, doloribus nihil distinctio sed inventore dignissimos qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam nihil  error hic reprehenderit! Suscipit laudantium rerum numquam, facilis  harum sit aperiam, doloribus nihil distinctio sed inventore dignissimos qui ?</p>
+    </div>
+
+    </div>
 </body>
 </html>
